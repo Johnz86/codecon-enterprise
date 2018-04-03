@@ -1,0 +1,32 @@
+{
+    "name": "codecon-enterprise",
+    "version": "1.0.0",
+    "description": "Web application with React/Redux/Node/Express/TypeOrm/Typescript/Postgress",
+    "author": {
+        "name": "Jan Jakubcik",
+        "email": "jakubcikjan@gmail.com",
+        "url": "https://webus.sk"
+    },
+    "license": "MIT",
+    "scripts": {
+        "install-server": "cd client && yarn install",
+        "install-client": "cd server && yarn install",
+        "install-app": "concurrently --kill-others-on-fail \"yarn install\" \"yarn install-server\" \"yarn install-client\"",
+        "client": "cd client && yarn start",
+        "server": "cd server && yarn start",
+        "build": "cd client && yarn build && cpx \"build/**/*\" \"../server/src/public\"",
+        "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+    },
+    "devDependencies": {
+        "concurrently": "^3.5.1",
+        "cpx": "^1.5.0"
+    },
+    "keywords": [
+        "node",
+        "express",
+        "react",
+        "redux",
+        "typescript",
+        "postgress"
+    ]
+}
