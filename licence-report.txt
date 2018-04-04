@@ -1,0 +1,48 @@
+Server: 
+
+department  related to  name                      license period  material / not material  license type  link                                                            comment
+----------  ----------  ----                      --------------  -----------------------  ------------  ----                                                            -------
+kessler     stuff       material-ui               perpetual       material                 MIT           git+https://github.com/mui-org/material-ui.git                  1.0.0-beta.40
+kessler     stuff       material-ui-icons         perpetual       material                 MIT           git+https://github.com/mui-org/material-ui.git                  1.0.0-beta.36
+kessler     stuff       npm                       perpetual       material                 Artistic-2.0  git+https://github.com/npm/npm.git                              5.8.0
+kessler     stuff       react                     perpetual       material                 MIT           git+https://github.com/facebook/react.git                       16.2.0
+kessler     stuff       react-dom                 perpetual       material                 MIT           git+https://github.com/facebook/react.git                       16.2.0
+kessler     stuff       react-redux               perpetual       material                 MIT           git+https://github.com/reactjs/react-redux.git                  5.0.7
+kessler     stuff       react-router              perpetual       material                 MIT           git+https://github.com/ReactTraining/react-router.git           4.2.0
+kessler     stuff       react-scripts-ts          perpetual       material                 n/a           n/a                                                             skipping react-scripts-ts (invalid semversion)
+kessler     stuff       redux                     perpetual       material                 MIT           git+https://github.com/reactjs/redux.git                        3.7.2
+kessler     stuff       redux-logger              perpetual       material                 MIT           git+https://github.com/theaqua/redux-logger.git                 3.0.6
+kessler     stuff       redux-persist             perpetual       material                 MIT           git+https://github.com/rt2zz/redux-persist.git                  5.9.1
+kessler     stuff       redux-thunk               perpetual       material                 MIT           git+https://github.com/gaearon/redux-thunk.git                  2.2.0
+kessler     stuff       history                   perpetual       material                 n/a           n/a                                                             skipping history (invalid semversion)
+kessler     stuff       jest                      perpetual       material                 n/a           n/a                                                             skipping jest (invalid semversion)
+kessler     stuff       node                      perpetual       material                 n/a           n/a                                                             skipping node (invalid semversion)
+kessler     stuff       react                     perpetual       material                 n/a           n/a                                                             skipping react (invalid semversion)
+kessler     stuff       react-dom                 perpetual       material                 n/a           n/a                                                             skipping react-dom (invalid semversion)
+kessler     stuff       react-redux               perpetual       material                 n/a           n/a                                                             skipping react-redux (invalid semversion)
+kessler     stuff       react-router              perpetual       material                 n/a           n/a                                                             skipping react-router (invalid semversion)
+kessler     stuff       redux-logger              perpetual       material                 n/a           n/a                                                             skipping redux-logger (invalid semversion)
+kessler     stuff       webpack-env               perpetual       material                 n/a           n/a                                                             skipping webpack-env (invalid semversion)
+kessler     stuff       redux-devtools-extension  perpetual       material                 MIT           git+https://github.com/zalmoxisus/redux-devtools-extension.git  2.13.2
+kessler     stuff       typescript                perpetual       material                 Apache-2.0    git+https://github.com/Microsoft/TypeScript.git                 2.7.1
+
+Client:
+
+department  related to  name              license period  material / not material  license type  link                                                  comment
+----------  ----------  ----              --------------  -----------------------  ------------  ----                                                  -------
+kessler     stuff       body-parser       perpetual       material                 MIT           git+https://github.com/expressjs/body-parser.git      1.18.2
+kessler     stuff       express           perpetual       material                 MIT           git+https://github.com/expressjs/express.git          4.16.3
+kessler     stuff       node              perpetual       material                 n/a           n/a                                                   skipping node (invalid semversion)
+kessler     stuff       pg                perpetual       material                 MIT           git://github.com/brianc/node-postgres.git             7.4.1
+kessler     stuff       reflect-metadata  perpetual       material                 Apache-2.0    git+https://github.com/rbuckton/reflect-metadata.git  0.1.12
+kessler     stuff       typeorm           perpetual       material                 MIT           git+https://github.com/typeorm/typeorm.git            0.1.20
+kessler     stuff       nodemon           perpetual       material                 MIT           git+https://github.com/remy/nodemon.git               1.17.3
+kessler     stuff       ts-node           perpetual       material                 MIT           git://github.com/TypeStrong/ts-node.git               3.3.0
+kessler     stuff       typescript        perpetual       material                 Apache-2.0    git+https://github.com/Microsoft/TypeScript.git       2.5.2
+
+Utils:
+
+department  related to  name          license period  material / not material  license type  link                                                    comment
+----------  ----------  ----          --------------  -----------------------  ------------  ----                                                    -------
+kessler     stuff       concurrently  perpetual       material                 MIT           git+https://github.com/kimmobrunfeldt/concurrently.git  3.5.1
+kessler     stuff       cpx           perpetual       material                 MIT           git+https://github.com/mysticatea/cpx.git               1.5.0
