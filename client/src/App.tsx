@@ -15,11 +15,13 @@ import Divider from 'material-ui/Divider';
 import List, { ListItem, ListItemIcon, ListItemText } from 'material-ui/List';
 import MenuIcon from 'material-ui-icons/Menu';
 import HomeIcon from 'material-ui-icons/Home';
+import PersonIcon from 'material-ui-icons/Person';
 import TodoIcon from 'material-ui-icons/FormatListNumbered';
 import Badge from 'material-ui/Badge/Badge';
 import { RootState } from './reducers/index';
 import { connect } from 'react-redux';
 import { Todo } from './model/model';
+import UserPage from './pages/UserPage';
 
 export namespace App {
     export interface Props extends RouteComponentProps<void> {
@@ -44,6 +46,7 @@ class App extends React.Component<WithStyles & App.Props, App.State> {
             <Route exact={true} path="/" component={HomePage} />
             <Route exact={true} path="/home" component={HomePage} />
             <Route exact={true} path="/todo" component={TodoPage} />
+            <Route exact={true} path="/users" component={UserPage} />
         </div>
     );
 
@@ -68,6 +71,14 @@ class App extends React.Component<WithStyles & App.Props, App.State> {
                             {this.renderTodoIcon()}
                         </ListItemIcon>
                         <ListItemText primary="Todo" />
+                    </ListItem>
+                </List>
+                <List>
+                    <ListItem button onClick={() => history.push('/users')}>
+                        <ListItemIcon>
+                            <PersonIcon />
+                        </ListItemIcon>
+                        <ListItemText primary="Users" />
                     </ListItem>
                 </List>
                 <div style={{ height: 10000 }} />

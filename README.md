@@ -1,4 +1,6 @@
-# Server side with TypeORM and Postgress
+# CodeCon Enterprise
+
+Web application stack build with React/Redux/Node/Express/TypeOrm/Typescript/Postgress
         
 Steps to run this project:
 
