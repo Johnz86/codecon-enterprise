@@ -3,6 +3,7 @@
     "version": "0.0.1",
     "description": "Backend server for enterprise.",
     "devDependencies": {
+        "nodemon": "^1.17.3",
         "ts-node": "3.3.0",
         "typescript": "2.5.2"
     },
@@ -17,6 +18,7 @@
         "typeorm": "0.1.20"
     },
     "scripts": {
-        "start": "ts-node src/index.ts"
+        "start": "ts-node src/index.ts",
+        "watch": "nodemon -e ts -x ts-node src/index.ts"
     }
 }

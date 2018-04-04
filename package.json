@@ -14,8 +14,9 @@
         "install-app": "concurrently --kill-others-on-fail \"yarn install\" \"yarn install-server\" \"yarn install-client\"",
         "client": "cd client && yarn start",
         "server": "cd server && yarn start",
+        "watch-server": "cd server && yarn watch",
         "build": "cd client && yarn build && cpx \"build/**/*\" \"../server/src/public\"",
-        "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+        "dev": "concurrently --kill-others-on-fail \"yarn watch-server\" \"yarn client\""
     },
     "devDependencies": {
         "concurrently": "^3.5.1",
