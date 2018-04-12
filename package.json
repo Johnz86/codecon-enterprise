@@ -11,7 +11,7 @@
     "scripts": {
         "install-server": "cd client && yarn install",
         "install-client": "cd server && yarn install",
-        "install-app": "concurrently --kill-others-on-fail \"yarn install\" \"yarn install-server\" \"yarn install-client\"",
+        "install-app": "yarn install && yarn install-server && yarn install-client",
         "client": "cd client && yarn start",
         "server": "cd server && yarn start",
         "watch-server": "cd server && yarn watch",
