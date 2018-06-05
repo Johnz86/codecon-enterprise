@@ -6,28 +6,28 @@
     "material-ui": "1.0.0-beta.40",
     "material-ui-icons": "^1.0.0-beta.17",
     "npm": "^5.7.1",
-    "react": "16.2.0",
-    "react-dom": "16.2.0",
+    "react": "16.4.0",
+    "react-dom": "16.4.0",
     "react-redux": "^5.0.6",
     "react-router": "^4.2.0",
-    "react-scripts-ts": "latest",
-    "redux": "^3.7.2",
+    "react-scripts-ts": "2.16.0",
+    "redux": "4.0.0",
     "redux-logger": "^3.0.6",
     "redux-persist": "^5.5.0",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "2.3.0"
   },
   "devDependencies": {
     "@types/history": "^4.6.2",
-    "@types/jest": "22.1.0",
-    "@types/node": "9.4.0",
-    "@types/react": "16.0.35",
-    "@types/react-dom": "16.0.3",
-    "@types/react-redux": "^5.0.14",
-    "@types/react-router": "^4.0.18",
-    "@types/redux-logger": "^3.0.5",
-    "@types/webpack-env": "^1.13.5",
+    "@types/jest": "^23.0.0",
+    "@types/node": "8.10.18",
+    "@types/react": "16.3.16",
+    "@types/react-dom": "16.0.6",
+    "@types/react-redux": "6.0.2",
+    "@types/react-router": "4.0.26",
+    "@types/redux-logger": "3.0.6",
+    "@types/webpack-env": "1.13.6",
     "redux-devtools-extension": "^2.13.2",
-    "typescript": "2.7.1"
+    "typescript": "2.8.4"
   },
   "scripts": {
     "start": "react-scripts-ts start",
@@ -35,5 +35,6 @@
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject"
   },
-  "proxy": "http://localhost:5000/"
+  "proxy": "http://localhost:5000/",
+  "license": "MIT"
 }

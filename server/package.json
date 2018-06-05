@@ -20,5 +20,6 @@
     "scripts": {
         "start": "ts-node src/index.ts",
         "watch": "nodemon -e ts -x ts-node src/index.ts"
-    }
+    },
+    "license": "MIT"
 }

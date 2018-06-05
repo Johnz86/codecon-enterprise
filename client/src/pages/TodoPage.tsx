@@ -77,4 +77,4 @@ function mapDispatchToProps(dispatch: any) {
   };
 }
 
-export default (withStyles(styles)<{}>(connect(mapStateToProps, mapDispatchToProps)(TodoPage)));
+export default (connect(mapStateToProps, mapDispatchToProps)(withStyles(styles)<{}>(TodoPage)));

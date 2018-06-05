@@ -35,7 +35,7 @@ export namespace App {
 
 const history = createBrowserHistory();
 
-class App extends React.Component<WithStyles & App.Props, App.State> {
+class App extends React.Component<WithStyles<string> & App.Props, App.State> {
 
     state = {
         mobileOpen: true,
@@ -210,4 +210,4 @@ function mapStateToProps(state: RootState) {
     };
 }
 
-export default (withRoot(withStyles(styles)<{}>(connect(mapStateToProps)(App))));
+export default (connect(mapStateToProps)(withRoot(withStyles(styles)<{}>(App))));
