@@ -11,7 +11,7 @@ export async function toDoRemoveByIdAction(request: Request, response: Response)
     const toDoRepository = getManager().getRepository(ToDo);
 
     // load a todo by a given post id
-    const todo = await toDoRepository.findOneById(request.params.id);
+    const todo = await toDoRepository.findOne(request.params.id);
 
     // if todo was not found return 404 to the client
     if (!todo) {
@@ -23,5 +23,5 @@ export async function toDoRemoveByIdAction(request: Request, response: Response)
     await toDoRepository.remove(todo);
 
     // return loaded post
-    response.send(200);
+    response.status(200).send();
 }

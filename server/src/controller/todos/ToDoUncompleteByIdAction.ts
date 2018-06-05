@@ -11,7 +11,7 @@ export async function toDoUncompleteByIdAction(request: Request, response: Respo
     const toDoRepository = getManager().getRepository(ToDo);
 
     // load a todo by a given post id
-    const todo = await toDoRepository.findOneById(request.params.id);
+    const todo = await toDoRepository.findOne(request.params.id);
 
     // if todo was not found return 404 to the client
     if (!todo) {
@@ -26,5 +26,5 @@ export async function toDoUncompleteByIdAction(request: Request, response: Respo
     await toDoRepository.save(todo);
 
     // return loaded post
-    response.send(todo);
+    response.status(200).send(todo);
 }

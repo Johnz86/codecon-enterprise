@@ -11,7 +11,7 @@ export async function toDoCompleteByIdAction(request: Request, response: Respons
     const toDoRepository = getManager().getRepository(ToDo);
 
     // load a todo by a given post id
-    const todo = await toDoRepository.findOneById(request.params.id);
+    const todo = await toDoRepository.findOne(request.params.id);
 
     // if todo was not found return 404 to the client
     if (!todo) {
